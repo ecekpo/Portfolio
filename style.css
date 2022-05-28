@@ -72,3 +72,10 @@ p {
   margin-right: 15px;
   justify-content: space-between;
 }
+
+
+.works-about-myself-container {
+  width: 375px;
+  height: 600px;
+  max-height:fit-content;
+}
