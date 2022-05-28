@@ -2,14 +2,13 @@
 
 # Project Name
 
-> Description the project.
+> Portfolio: Mobile Version
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo (if available)
 
@@ -36,21 +35,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
-
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ecekpo)
+- Twitter: [@twitterhandle](https://twitter.com/@ememcookey)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emem-ekpo-857135234/)
 
 ## 🤝 Contributing
 
