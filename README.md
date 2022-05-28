@@ -1,24 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Portfolio: setup and mobile version skeleton
+# Project Name
 
-Built With
+> Portfolio: Mobile Version
+
+
+## Built With
 
 - HTML
 - CSS
 
+## Live Demo (if available)
 
-Getting Started
+[Live Demo Link](https://livedemo.com)
+
+
+## Getting Started
+
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+
 To get a local copy up and running follow these simple example steps.
 
-Author:
+### Prerequisites
 
-- GitHub: @ecekpo
-- Twitter: @ememcookey
-- LinkedIn: LinkedIn
+### Setup
 
+### Install
 
-🤝 Contributing
+### Usage
+
+### Run tests
+
+### Deployment
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/ecekpo)
+- Twitter: [@twitterhandle](https://twitter.com/@ememcookey)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emem-ekpo-857135234/)
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -27,3 +52,13 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
