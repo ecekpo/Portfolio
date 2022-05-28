@@ -73,9 +73,8 @@ p {
   justify-content: space-between;
 }
 
-
 .works-about-myself-container {
   width: 375px;
   height: 600px;
-  max-height:fit-content;
+  max-height: fit-content;
 }
