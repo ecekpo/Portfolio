@@ -73,7 +73,6 @@ p {
   justify-content: space-between;
 }
 
-
 .wrapper {
   display: grid;
   width: 375px;
@@ -147,12 +146,12 @@ p {
   width: 8px;
   height: 8px;
   left: 67px;
+
   /* top: 12px; */
   background: #c1c7d0;
   border-radius: 50%;
   margin-top: -30px;
 }
-
 
 .normal {
   width: 295px;
@@ -222,6 +221,7 @@ p {
   letter-spacing: 0.03em;
   color: #396df2;
 }
+
 .sub2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
