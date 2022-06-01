@@ -87,6 +87,7 @@ h1 {
   font-size: 45px;
   line-height: 52px;
   color: #172b4d;
+  margin-top: -20px;
 }
 
 .normaltxt {
@@ -185,7 +186,7 @@ h3 {
   flex-direction: row;
   width: 327px;
   min-height: 72px;
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: none;
 }
 
 .listname {
