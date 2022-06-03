@@ -87,7 +87,7 @@ p {
   flex-direction: column;
   height: 572px;
   margin-top: 50px;
-  margin-left: 0;
+  margin-left: 0%;
   margin-right: 24px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -252,7 +252,7 @@ p {
 }
 
 .button {
-  width: 124px;
+  width: 160px;
   height: 48px;
   margin-top: 10px;
   border: 1px solid #6070ff;
@@ -348,3 +348,223 @@ p {
   border-radius: 16px;
   margin-top: 50px;
 }
+
+.skillul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 327px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin-left: -50px;
+}
+
+li .techs {
+  display: inline;
+}
+
+.skill ul {
+  list-style-type: none;
+}
+
+a .nav-bar {
+  text-decoration: none;
+}
+
+.skillli {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  list-style: none;
+  width: 303px;
+  max-width: 303px;
+  min-height: 66.72px;
+  margin: 12px;
+  text-align: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.wrapperabout p {
+  margin-top: 20px;
+}
+
+.top h1 {
+  margin-top: 50px;
+  margin-left: 1px;
+}
+
+.social2 {
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  height: 80px;
+  margin-left: -17px;
+  margin-bottom: 10px;
+}
+
+.vectorfram {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.vectorfram .vector-button img {
+  margin-left: 1px;
+  margin-top: -30px;
+}
+
+h3 {
+  order: 1;
+  width: fit-content;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.skill p ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 327px;
+  height: 590px;
+  margin-left: 10px;
+  margin-top: 114px;
+  padding-top: 48px;
+}
+
+.listfram {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 327px;
+  min-height: 71px;
+  margin-top: -30px;
+}
+
+.listtag .listname {
+  display: flex;
+  flex-direction: row;
+  width: 327px;
+  min-height: 72px;
+  border-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.listname .listtag {
+  width: 273px;
+  height: 24px;
+  margin-right: 78px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin-left: 30px;
+  margin-top: -30px;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 33px;
+  border: none;
+  background-color: #fff;
+}
+
+.listimg {
+  margin-left: 12px;
+  margin-top: 9px;
+}
+
+.listtxt {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+  margin-left: 16px;
+  margin-top: 21px;
+}
+
+.vector-button {
+  border: none;
+  background: none;
+}
+
+.vector-button :hover {
+  transform: scale(1.3);
+}
+
+.vector-button:active {
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+footer {
+  align-content: flex-start;
+  background-image: url(./images/Contactmecard\.svg);
+  background-repeat: no-repeat;
+  width: 120%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.background-image {
+  background-image: url('images/header-shapes\ mobile.svg');
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  
+  /* background-size: contain; */
+  margin: 8%;
+  align-items: center;
+}
+
+.contact-me {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  margin-top: 20%;
+}
+
+
