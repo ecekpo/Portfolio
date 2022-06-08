@@ -4,6 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
 .main_section {
   background-color: #fff;
   max-width: 375px;
@@ -365,7 +366,7 @@ p {
 }
 
 li .techs {
-  display: inline;
+  float: right;
 }
 
 .skill ul {
@@ -541,12 +542,13 @@ footer {
   align-content: flex-start;
   background-image: url(./images/Contactmecard\.svg);
   background-repeat: no-repeat;
-  width: 120%;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+
 
 .background-image {
   background-image: url('images/header-shapes\ mobile.svg');
@@ -567,4 +569,77 @@ footer {
   margin-top: 20%;
 }
 
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 
+#contact-btn {
+  font-weight: 500;
+  font-size: 20px;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 6px 13px;
+  align-self: baseline;
+  background-color: white;
+border-radius: 8px;
+border-color: white;
+}
+
+.background-image {
+  background-image: url(./images/contact\ header-shapes\ mobile.svg);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+
+  /* background-size: contain; */
+  margin: 8%;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 10%;
+}
+
+.contact-details {
+  font-size: 16px;
+  color: #ebebff;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+input {
+  font-size: 17px;
+  color: #172b4d;
+  padding: 15px 16px;
+  width: -webkit-fill-available;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+::placeholder {
+  color: #b3bac5;
+}
+
+#message {
+  border: 1px solid #cfd8dc;
+  width: -webkit-fill-available;
+  font-size: 17px;
+  color: #172b4d;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
