@@ -4,7 +4,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 .main_section {
   background-color: #fff;
   max-width: 375px;
@@ -533,11 +532,6 @@ h3 {
   transform: translateY(4px);
 }
 
-
-
-
-
-
 footer {
   align-content: flex-start;
   background-image: url(./images/Contactmecard\.svg);
@@ -549,23 +543,22 @@ footer {
   margin-top: 30px;
 }
 
-
-.background-image {
+.Background-image {
   background-image: url('images/header-shapes\ mobile.svg');
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  
+
   /* background-size: contain; */
   margin: 8%;
   align-items: center;
 }
 
-.contact-me {
+.Contact-me {
   font-size: 40px;
   font-weight: 700;
   color: white;
-  margin-bottom: 12px;
+  margin-bottom: 35px;
   margin-top: 20%;
 }
 
@@ -578,14 +571,15 @@ form {
 
 #contact-btn {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   width: fit-content;
   margin-top: 20px;
   padding: 6px 13px;
   align-self: baseline;
   background-color: white;
-border-radius: 8px;
-border-color: white;
+  border-radius: 8px;
+  border-color: #6070FF;
+  color: #6070FF;
 }
 
 .background-image {
