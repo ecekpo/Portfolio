@@ -202,15 +202,16 @@ h4 span {
 
 .click {
   color: #396df2;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #6070ff;
-  font-weight: 500;;
+  font-weight: 500px;
   font-size: 17px;
   line-height: 24px;
   border-radius: 8px;
   padding: 8px 8px;
   margin-top: 1rem;
   align-self: flex-start;
+  margin-left: -30px;
 }
 
 .see {
@@ -287,6 +288,8 @@ form button {
 
 .about button {
   margin: 10px 0 20px 0;
+  background: white;
+  border: none;
 }
 
 .skills {
@@ -328,7 +331,6 @@ form button {
   flex-direction: column;
   padding: 30px;
   margin-top: 30px;
-
 }
 
 .contact-headings {
@@ -575,7 +577,6 @@ form button:active {
     padding: 24px;
     border-radius: 10px;
     border: 1px solid #396df2;
-    
   }
 
   .roles {
@@ -627,6 +628,8 @@ form button:active {
   .contact-headings h1 {
     width: 801px;
     height: 56px;
+    margin-left: -70px;
+    text-align: center;
   }
 
   .contact-headings p {
@@ -637,7 +640,7 @@ form button:active {
     line-height: 28px;
     text-align: center;
     color: #ebebff;
-    margin-left: 50px;
+    margin-left: -70px;
     margin-bottom: 12px;
   }
 
@@ -674,47 +677,47 @@ form button:active {
     height: 48px;
     border: none;
   }
-}
 
-.move-in {
-  animation-name: moveIn;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  position: relative;
-}
+  .move-in {
+    animation-name: moveIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    position: relative;
+  }
 
-@keyframes moveIn {
-  from {
-    top: -1000px;
+  @keyframes moveIn {
+    from {
+      top: -1000px;
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .delay-3 {
+    animation-delay: 2s;
+  }
+
+  .opacity-0 {
     opacity: 0;
   }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation-name: fadeIn;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.delay-3 {
-  animation-delay: 2s;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
