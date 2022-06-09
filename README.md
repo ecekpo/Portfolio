@@ -44,17 +44,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/@ememcookey)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emem-ekpo-857135234/)
 
-**Author2**
-
-- GitHub: [@githubhandle](https://github.com/ecekpo)
-- Twitter: [@twitterhandle](https://twitter.com/@ememcookey)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emem-ekpo-857135234/)
-
-**Author3**
-
-- GitHub: [@githubhandle](https://github.com/ecekpo)
-- Twitter: [@twitterhandle](https://twitter.com/@ememcookey)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emem-ekpo-857135234/)
 
 ## 🤝 Contributing
 
