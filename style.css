@@ -56,6 +56,7 @@ a {
   line-height: 20px;
   padding-right: 20px;
   color: #344563;
+  transform: scale(1);
 }
 
 .nav-links li {
@@ -212,6 +213,7 @@ h4 span {
   margin-top: 1rem;
   align-self: flex-start;
   margin-left: 70px;
+  transform: translate(10px);
 }
 
 .see {
@@ -400,6 +402,8 @@ form button:active {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: white;
+  transform: scale(2, 0.5);
+  transform-origin: left;
 }
 
 .click:active {
@@ -520,6 +524,7 @@ form button:active {
     margin-top: 166px;
     width: 100%;
     padding-right: 4rem;
+    transform: scale(0.7); 
   }
 
   .stack li {
