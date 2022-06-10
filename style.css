@@ -408,7 +408,6 @@ form button:active {
   box-shadow: none;
 }
 
-
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .nav-links {
