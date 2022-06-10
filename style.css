@@ -56,6 +56,7 @@ a {
   line-height: 20px;
   padding-right: 20px;
   color: #344563;
+  transform: scale(1);
 }
 
 .nav-links li {
@@ -212,6 +213,7 @@ h4 span {
   margin-top: 1rem;
   align-self: flex-start;
   margin-left: 70px;
+  transform: translate(10px);
 }
 
 .see {
