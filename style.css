@@ -128,6 +128,7 @@ li:active {
   line-height: 24px;
   color: #7f8cff;
   margin-left: 30px;
+  transform: translate(10px);
 }
 
 /* work section styling */
@@ -154,6 +155,7 @@ li:active {
 
 .project img {
   border-radius: 16px;
+  transform: rotate(45deg);
 }
 
 .project-box h3 {
@@ -212,6 +214,7 @@ h4 span {
   margin-top: 1rem;
   align-self: flex-start;
   margin-left: 70px;
+  transform: rotate(45deg);
 }
 
 .see {
@@ -394,6 +397,7 @@ form button:active {
   background: #2230d2;
   color: #fff;
   box-shadow: none;
+  transform: rotate(45deg);
 }
 
 .click:hover {
