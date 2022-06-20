@@ -420,6 +420,21 @@ form button:active {
     display: none;
   }
 
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    background-color: white;
+  }
+
   #portfolio-container {
     display: none;
   }
