@@ -414,6 +414,14 @@ form button:active {
   width: 80vh;
 }
 
+.menu {
+  display: none;
+}
+
+.active {
+  display:block;
+}
+
 .popup .overlay {
   position: fixed;
   top: 0;
