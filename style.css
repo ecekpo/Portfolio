@@ -172,7 +172,7 @@ p {
   margin-bottom: 10px;
   width: 30vh;
   font-size: 15px;
-  transition: font-size 3s background-color 3s;
+  transition: 3s background-color 3s;
 }
 
 .content li {
@@ -181,12 +181,12 @@ p {
   padding: 2px 4px;
 }
 
-.card-list-one li:first-child {
-  color: #252524;
-}
-
 .languages li {
   list-style: none;
+}
+
+.card-list-one li:first-child {
+  color: #252524;
 }
 
 .lang-img {
