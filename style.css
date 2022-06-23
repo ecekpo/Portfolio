@@ -170,9 +170,8 @@ p {
   justify-content: space-between;
   margin-top: 5px;
   margin-bottom: 10px;
-  width: 30vh;
+  width: 35vh;
   font-size: 15px;
-  transition: 3s background-color 3s;
 }
 
 .content li {
