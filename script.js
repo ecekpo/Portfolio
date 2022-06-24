@@ -200,23 +200,23 @@ closeModalBtn.addEventListener('click', () => {
 });
 
 const formemail = document.querySelector('#form');
-const emailerror = document.querySelector('.emailerror'); 
-const userEmail = document.querySelector ('.useremail');
+const emailerror = document.querySelector('.emailerror');
+const userEmail = document.querySelector('.useremail');
 
-formemail.addEventListener ('submit', (e)=> {
-const userinput = userEmail.value;
+formemail.addEventListener('submit', (e) => {
+  const userinput = userEmail.value;
   if (/[A-Z]/.test(userinput)) {
-  emailerror.innerHTML='invalid email, please use small letters';
-  emailerror.classList.add('.emailerror');
-  e.preventDefault();
+    emailerror.innerHTML = 'invalid email, please use small letters';
+    emailerror.classList.add('.emailerror');
+    e.preventDefault();
   }
 });
 
-  formemail.addEventListener ('input', () => {
-    const formstorage= {
-    name: document.querySelector ('#fullname').value,
+formemail.addEventListener('input', () => {
+  const formstorage = {
+    name: document.querySelector('#fullname').value,
     email: document.querySelector('.useremail').value,
-    message: document.querySelector ('#message-input').value,
+    message: document.querySelector('#message-input').value,
   };
-  localStorage.setItem ('form', JSON.stringify(formstorage)); 
-  });
+  localStorage.setItem('form', JSON.stringify(formstorage));
+});
