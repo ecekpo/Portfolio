@@ -199,76 +199,24 @@ closeModalBtn.addEventListener('click', () => {
   body.style.overflow = 'auto';
 });
 
-// Email validation
-function showMessage(input, message, type) {
-  const msg = input.parentNode.querySelector('small');
-  msg.innerText = message;
-  return type;
-}
+const formemail = document.querySelector('#form');
+const emailerror = document.querySelector('.emailerror'); 
+const userEmail = document.querySelector ('.useremail');
 
-function showError(input, message) {
-  return showMessage(input, message, false);
-}
-
-function showSuccess(input) {
-  return showMessage(input, '', true);
-}
-
-function hasValue(input, message) {
-  if (input.value.trim() === '') {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-
-function validateEmail(input, invalidMsg) {
-  if (!hasValue(input, invalidMsg)) {
-    return false;
-  }
-  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-
-  const email = input.value.trim();
-  if (!emailRegex.test(email)) {
-    return showError(input, invalidMsg);
-  }
-  return true;
-}
-
-const form = document.querySelector('#form');
-const EMAIL_INVALID = 'Please enter a correct email address format and uppercase is not allowed!!';
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
-  if (emailValid) {
-    form.submit();
+formemail.addEventListener ('submit', (e)=> {
+const userinput = userEmail.value;
+  if (/[A-Z]/.test(userinput)) {
+  emailerror.innerHTML='invalid email, please use small letters';
+  emailerror.classList.add('.emailerror');
+  e.preventDefault();
   }
 });
 
-// Local storage
-const fullNameForm = document.getElementById('fullname');
-const emailForm = document.getElementById('email');
-const commentForm = document.getElementById('message-input');
-
-function handleChange() {
-  const formData = {
-    fullName: fullNameForm.value,
-    email: emailForm.value,
-    comment: commentForm.value,
+  formemail.addEventListener ('input', () => {
+    const formstorage= {
+    name: document.querySelector ('#fullname').value,
+    email: document.querySelector('.useremail').value,
+    message: document.querySelector ('#message-input').value,
   };
-  localStorage.setItem('form', JSON.stringify(formData));
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const getFormValue = localStorage.getItem('form');
-  if (getFormValue) {
-    const formObject = JSON.parse(getFormValue);
-    fullNameForm.value = formObject.fullName;
-    emailForm.value = formObject.email;
-    commentForm.value = formObject.comment;
-  }
-});
-
-fullNameForm.onchange = handleChange;
-emailForm.onchange = handleChange;
-commentForm.onchange = handleChange;
+  localStorage.setItem ('form', JSON.stringify(formstorage)); 
+  });
