@@ -6,12 +6,14 @@
 > 2_Mobile
 > Desktop version
 > Animation
-
+> Popup
+> contact form
 
 ## Built With
 
 - HTML
 - CSS
+- Javascript
 
 ## Live Demo (if available)
 
@@ -29,10 +31,13 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 ### Setup
+- Git clone URL https://github.com/ecekpo/Portfolio.git
+- Open code editor e.g VS code editor
 
 ### Install
 
 ### Usage
+- Copy [Live Demo Link](https://ecekpo.github.io/Portfolio/) and run in the browser
 
 ### Run tests
 
@@ -48,8 +53,10 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## 🤝 Contributing
-
-Zedd Zedd
+- Emmanuella Ngufor
+- Zedd Zedd
+- Dev-inspired
+- Temesgen
 
 Feel free to check the [issues page](../../issues/).
 
