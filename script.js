@@ -215,10 +215,9 @@ formemail.addEventListener('submit', (e) => {
 const clientName = document.getElementById('fullname');
 const clientEmail = document.getElementById('email');
 const clientMessage = document.getElementById('message-input');
-const formKey = 'formemail';
 
 window.onload = () => {
-  const formData = localStorage.getItem(formKey);
+  const formData = localStorage.getItem(formemail);
 
   if (formData) {
     const form = JSON.parse(formData);
