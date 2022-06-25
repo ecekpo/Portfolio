@@ -217,7 +217,7 @@ const clientEmail = document.getElementById('email');
 const clientMessage = document.getElementById('message-input');
 
 window.onload = () => {
-  const formData = localStorage.getItem(formemail);
+  const formData = localStorage.getItem('formKey');
 
   if (formData) {
     const form = JSON.parse(formData);
