@@ -212,6 +212,7 @@ formemail.addEventListener('submit', (e) => {
   }
 });
 
+// Local storage section
 formemail.addEventListener('input', () => {
   const formstorage = {
     name: document.querySelector('#fullname').value,
