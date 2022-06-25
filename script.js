@@ -212,11 +212,26 @@ formemail.addEventListener('submit', (e) => {
   }
 });
 
+const clientName = document.getElementById('fullname');
+const clientEmail = document.getElementById('email');
+const clientMessage = document.getElementById('message-input');
+
+window.onload = () => {
+  const formData = localStorage.getItem('formKey');
+
+  if (formData) {
+    const form = JSON.parse(formData);
+    clientName.value = form.clientName;
+    clientEmail.value = form.clientEmail;
+    clientMessage.value = form.clientMessage;
+  }
+};
+
 formemail.addEventListener('input', () => {
   const formstorage = {
-    name: document.querySelector('#fullname').value,
-    email: document.querySelector('.useremail').value,
-    message: document.querySelector('#message-input').value,
+    clientName: clientName.value,
+    clientEmail: clientEmail.value,
+    clientMessage: clientMessage.value,
   };
-  localStorage.setItem('form', JSON.stringify(formstorage));
+  localStorage.setItem('formKey', JSON.stringify(formstorage));
 });
