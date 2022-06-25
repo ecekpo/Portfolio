@@ -493,7 +493,7 @@ form button {
   background: #fff;
   color: #6070ff;
   border-radius: 8px;
-  border: none;
+  border: solid 1px;
   width: 140px;
   height: 48px;
   margin-left: 70px;

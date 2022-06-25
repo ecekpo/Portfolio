@@ -16,6 +16,7 @@
     <title>Cookey's Portfolio</title>
   </head>
   <body>
+   
 
     <header>
       <nav class="nav-bar">
@@ -42,6 +43,7 @@
         </ul>
       </nav>
     </header>
+    
     <main>
       <section class="profile">
         <article>
@@ -187,12 +189,11 @@
         </p>
       </article>
 
-      <form action="https://formspree.io/f/xgeddrdw" method="POST" id="form">
+      <form action="https://formspree.io/f/xrgjvloe" method="POST" id="form">
         <input id="fullname" type="text" name="username" maxlength="30" placeholder="Full name" required />
-      <input onchange="handleChange()" type="email" id="email" name="email" placeholder="Email" required />
+      <input type="email" class="useremail" id="email" name="email" placeholder="Email" required />
       <textarea id="message-input" name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"required></textarea>
-        <button class="form-submit" type="submit">Get In Touch</button>
-      </form>
+       <div class="emailerror"></div> <button class="form-submit" type="submit">Get In Touch</button>
     </section>
     <script src="./index.js"></script>
   </body>
