@@ -15,11 +15,19 @@ document.querySelectorAll('.menu-list-1').forEach((n) => n.addEventListener('cli
 // Portfolio card detail information
 const cards = [
   {
+
     card_image: 'assest/pic1.PNG',
     card_title: 'Tonic',
     card_title_item: 'CANOPY',
     counter_image: 'assest/count-icon.PNG',
     card_title_text: ['Back End Dev', '2015'],
+
+    project_img: 'images/Snapshots.PNG',
+    project_title: 'Facebook 360',
+    project_info_title: 'CANOPY',
+    counter_image: 'images/dot.svg',
+    project_info_text: ['Back End Dev', '2015'],
+
     project_description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
@@ -27,11 +35,19 @@ const cards = [
     source_code: 'https://github.com/ecekpo/Portfolio.git',
   },
   {
+
     card_image: 'assest/pic2.PNG',
     card_title: 'Multi-Post Stories',
     card_title_item: 'CANOPY',
     counter_image: 'assest/count-icon.PNG',
     card_title_text: ['Back End Dev', '2015'],
+
+    project_img: 'images/pic2.PNG',
+    project_title: 'Facebook 360',
+    project_info_title: 'CANOPY',
+    counter_image: 'images/dot.svg',
+    project_info_text: ['Back End Dev', '2015'],
+
     project_description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
@@ -39,11 +55,19 @@ const cards = [
     source_code: 'https://github.com/ecekpo/Portfolio.git',
   },
   {
+
     card_image: 'assest/pic3.PNG',
     card_title: 'Facebook 360',
     card_title_item: 'CANOPY',
     counter_image: 'assest/count-icon.PNG',
     card_title_text: ['Back End Dev', '2015'],
+
+    project_img: 'assest/pic3.PNG',
+    project_title: 'Facebook 360',
+    project_info_title: 'CANOPY',
+    counter_image: 'ima/dot.svg',
+    project_info_text: ['Back End Dev', '2015'],
+
     project_description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
@@ -64,8 +88,13 @@ const cards = [
   },
 ];
 
+
 // Section handles Card using an array of project data objects
 const portfolio = document.querySelector('.portfolio-works');
+
+// Populate Project Card using an array of project data objects
+const portfolio = document.querySelector('.card-work');
+
 portfolio.removeChild(portfolio.firstElementChild);
 
 cards.forEach((project) => {
@@ -156,14 +185,19 @@ seeProjectBtn.forEach((button, index) => {
     // Pop-up Modal
     const modalData = cards[index];
     const modalTags = Array.from(
+
       document.querySelectorAll('.works-modal .tag-content'),
+
+      document.querySelectorAll('.card-work-modal .tag-item'),
+
     );
     const modalCounterImg = Array.from(
-      document.querySelectorAll('.works-modal .project-info img'),
+      document.querySelectorAll('.card-work-modal .project-info img'),
     );
     const infoItems = Array.from(
-      document.querySelectorAll('.works-modal .project-info-item'),
+      document.querySelectorAll('.card-work-modal .project-info-item'),
     );
+
 
     document.querySelector('.works-modal .project-title').innerHTML = modalData.card_title;
     document.querySelector('.works-modal .project-info-title').innerHTML = modalData.card_title_item;
@@ -171,6 +205,14 @@ seeProjectBtn.forEach((button, index) => {
     document.querySelector('.works-modal .project-description').innerHTML = modalData.project_description;
     document.querySelector('.works-modal .see-live').href = modalData.live_version;
     document.querySelector('.works-modal .see-source').href = modalData.source_code;
+
+    document.querySelector('.card-work-modal .project-title').innerHTML = modalData.project_title;
+    document.querySelector('.card-work-modal .project-info-title').innerHTML = modalData.project_info_title;
+    document.querySelector('.card-work-modal .Project-img').src = modalData.project_img;
+    document.querySelector('.card-work-modal .project-description').innerHTML = modalData.project_description;
+    document.querySelector('.card-work-modal .see-live').href = modalData.live_version;
+    document.querySelector('.card-work-modal .see-source').href = modalData.source_code;
+
 
     modalCounterImg.forEach((infoImg) => {
       infoImg.src = modalData.counter_image;
@@ -184,10 +226,10 @@ seeProjectBtn.forEach((button, index) => {
     });
 
     // Handle modal buttons
-    document.querySelector('.works-modal .see-live').onclick = () => {
+    document.querySelector('.card-work-modal .see-live').onclick = () => {
       window.location.href = modalData.live_version;
     };
-    document.querySelector('.works-modal .see-source').onclick = () => {
+    document.querySelector('.card-work-modal .see-source').onclick = () => {
       window.location.href = modalData.source_code;
     };
   });
