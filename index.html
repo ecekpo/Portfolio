@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,900&
-    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -17,46 +17,45 @@
   </head>
   <body>
    
-
     <header>
       <nav class="nav-bar">
-        <div class="logo logo-rotated">
+        <div class="logo">
           <a href="#">My Logo</a>
         </div>
-        <!-- <img src="./images/Union.png" alt=""> -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  
+        <div class="hamburger-menu-bar">
+          <span class="hamburgar-bar"></span>
+          <span class="hamburgar-bar"></span>
+          <span class="hamburgar-bar"></span>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-bar-links">
           <li><a href="#desktop-card">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!-- mobile menu -->
-        <ul class="mobile-menu">
-          <li class="menu-item"><a href="#mobile-card">Portfolio</a></li>
-          <li class="menu-item"><a href="#about">About</a></li>
-          <li class="menu-item"><a href="#contact">Contact</a></li>
+        <ul class="m-menu-bar">
+          <li class="menu-list-1"><a href="#mobile-card">Portfolio</a></li>
+          <li class="menu-list-1"><a href="#about">About</a></li>
+          <li class="menu-list-1"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     
     <main>
       <section class="profile">
-        <article>
-          <h1 class="move-in">I’m Cookey<br/>Glad to see you!</h1>
-          <p class="fade-in">
+        <div>
+          <h1>I’m Cookey<br/>Glad to see you!</h1>
+          <p>
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
             contact me.
           </p>
-        </article>
-        <h4 class="fade-in delay-3 opacity-0">Lets connect</h4>
-        <ul class="socials">
+        </div>
+        <h4>Lets connect</h4>
+        <ul class="social">
           <li><a href=""><img src ="./images/twitter.svg" class="social-icons" alt="twitter">
           </a></li>
         
@@ -76,8 +75,8 @@
       </section>
     </main>
 
-    <!--Work Section-->
-    <section class="works" id="portfolio">
+    <!--portfolio work section-->
+    <section class="portfolio-works" id="portfolio">
       <h1></h1>
     </section>
     <section class="modal-container">
@@ -86,34 +85,36 @@
           <div class="project-header">
             <div class="modal-title-container">
               <h1 class="project-title"></h1>
-
-              <i class="fas fa-times modal-close-button"></i>
+              <i class="modal-close-button"></i>
             </div>
             <div class="project-info">
               <h2 class="project-info-title"></h2>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
+              <img src="assest/count-icon.png" alt="counter">
+              <p class="project-info-item">Back End Dev </p>
+              <img src="assest/count-icon.png" alt="counter">
+              <p class="project-info-item">2015 </p>
             </div>
           </div>
         </li>
         <li class="project-img-wrapper">
-          <img src="#" alt="proj" class="Project-img" />
+          <img src="#" class="Project-img" alt="proj" />
         </li>
         <li class="modal-body">
           <p class="project-description"></p>
-          <ul class="tags">
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-          </ul>
-          <div class="divider"></div>
+         
+          <div class="div-techs">
+          <ul>
+            <li>html</li>
+           <li>css</li>
+        <li>javaScript</li>
+        </ul>
+      </div>
+          
           <div class="action-container">
-            <button class="action-btn see-live" type="button">
+            <button class="see-live-button" type="button">
               See Live
-              <img src="./images/seeliveimag.svg" alt="ass" /></button
-            ><button class="action-btn see-source" type="button">
+              <img src="./images/seealiveicon.png" alt="ass" /></button>
+              <button class="see-source-button" type="button">
               See Source
               <img src="./images/seesourceimg.svg" alt="ass"/>
             </button>
@@ -122,7 +123,7 @@
       </ul>
     </section>
 
-    <!--About myself section -->
+   <!-- Portfolio-about-section -->
     <section class="about" id="about">
       <div class="about-container">
         <div class="desktop-about">
@@ -134,68 +135,79 @@
             hestiate to contact me.
           </p>
           <p class="connect">LET'S CONNECT</p>
-          <ul class="socials icons about-socials">
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-maxcdn" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a></li>
+          <ul class="social">
+            <li><a href=""><img src="./images/github.svg" class="social-icons" alt="git">
+            </a></li>       
+          <li><a href=""><img src ="./images/linkedin.svg" class="social-icons" alt="linked">
+          </a></li>  
+          <li><a href=""><img src="./images/Vector.svg" class="social-icons" alt="vec">
+          </a></li>
+          <li><a href=""><img src ="./images/twitter.svg" class="social-icons" alt="twitter">
+          </a></li> 
+          <li><a href=""><img src ="./images/medium.svg" class="social-icons" alt="med">
+          </a></li>
           </ul>
           <button class="click">Get my resume</button>
         </div>
+      </div>
         
-        <div class="desktop-stack">
-          <h3>
-            <span>Languages</span><img src="/images/arrow-down.svg" alt="arr"/>
-          </h3>
-          <div class="lang">
-            <img src="./images/JavaEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">JavaScript<span>
-          </div> 
-          <div class="lang">
-            <img src="./images/HTMLEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">HTML</span>
-          </div> 
-          <div class="lang">
-            <img src="./images/CSSEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">CSS</span>
-          </div> 
-      </div>
-
-          <div class="listfram">
-            <div class="listtag">
-                <button type="button" class="icon"><img src="./images/F1.svg.svg" alt="button2"></button>
-            </div>
-            <ul class="skillul">
-            </ul>
+        <div class="skill">
+          <div class="listtag ">
+            <p class="listname">Languages</p>
         </div>
-        <div class="listfram">
-            <div class="listtag ">
-        <button type="button" class="icon"><img src="./images/Frame.svg" alt="button"></button>
+            <div class="listfram ">
+               
+                <ul class="skillul ">
+                    <li class="skillli ">
+                        <div class="listimg"><img src="./images/FrameJava.svg" alt="javascript"></div>
+                    </li>
+                    <li class="skillli ">
+                        <div class="listimg"><img src="./images/HTMLFrame10.svg" alt="html"></div>
+                    </li>
+                    <li class="skillli ">
+                        <div class="listimg"><img src="./images/CSSFrame11(1).svg" alt="CSS"></div>
+                        
+                    </li>
+                </ul>
+      
+                <div class="listfram ">
+                    <div class="listtag ">
+                        <button type="button" class="icon"><img src="./images/F1.svg.svg" alt="button2"></button>
+                    </div>
+                    <ul class="skillul">
+                    </ul>
+                </div>
+                <div class="listfram ">
+                    <div class="listtag ">
+                <button type="button" class="icon"><img src="./images/Frame.svg" alt="button"></button>
+                    </div>
+                    <ul class="skillul">
+                    </ul>
+                </div>
+      
             </div>
-            <ul class="skillul">
-            </ul>
-            </div>
-        </div>
-        </div>
-      </div>
+          </div>
     </section>
 
-    <!--Contact info section-->
     <section class="contact-info" id="contact">
-      <article class="contact-headings">
+      <div class="detail-contact">
         <h2>Contact me</h2>
         <p>
           If you have an application you are interested in developing, a feature
-          that you need built or a project that  coding. I’d love to help
+          that you need built or a project that coding. I’d love to help
           with it
         </p>
-      </article>
+      </div>
 
       <form action="https://formspree.io/f/xrgjvloe" method="POST" id="form">
-        <input id="fullname" type="text" name="username" maxlength="30" placeholder="Full name" required />
+      <input id="fullname" type="text" name="username" maxlength="30" placeholder="Full name" required />
       <input type="email" class="useremail" id="email" name="email" placeholder="Email" required />
-      <textarea id="message-input" name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"required></textarea>
-       <div class="emailerror"></div> <button class="form-submit" type="submit">Get In Touch</button>
+      <textarea id="message-input" name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"required /> </textarea>
+     <div class="emailerror"></div> 
+     <button class="form-submit" type="submit">Get In Touch</button>
        </form>
     </section>
+  
     <script src="./index.js"></script>
   </body>
 </html>
