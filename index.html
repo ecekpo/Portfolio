@@ -4,184 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,900&
-    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link  rel="stylesheet"  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script       src="https://kit.fontawesome.com/b2291adafa.js" 
+    crossorigin="anonymous"
+  ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+       
     <title>Cookey's Portfolio</title>
   </head>
   <body>
-   
-
-    <header>
-      <nav class="nav-bar">
-        <div class="logo logo-rotated">
-          <a href="#">My Logo</a>
+    <div id="container">
+      <div id="mobile-nav">
+        <div class="nav__container">
+          <a href="./index.html" class="logo">My Logo</a>
+          <ul class="nav-bar-menu">
+            <li><a href="#cards">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+          <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <!-- <img src="./images/Union.png" alt=""> -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#desktop-card">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <!-- mobile menu -->
-        <ul class="mobile-menu">
-          <li class="menu-item"><a href="#mobile-card">Portfolio</a></li>
-          <li class="menu-item"><a href="#about">About</a></li>
-          <li class="menu-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
     
-    <main>
-      <section class="profile">
-        <article>
-          <h1 class="move-in">I’m Cookey<br/>Glad to see you!</h1>
-          <p class="fade-in">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
-          </p>
-        </article>
-        <h4 class="fade-in delay-3 opacity-0">Lets connect</h4>
-        <ul class="socials">
-          <li><a href=""><img src ="./images/twitter.svg" class="social-icons" alt="twitter">
-          </a></li>
+    <section id="overlay">
+      <!--Header Section -->
+      <!-- <div id="header">
+            <nav class="nav">
+                <h3 class="logo">My Logo</h3>
+                <div class="menu-icon">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </nav>
+          </div>
         
-        <li><a href=""><img src ="./images/linkedin.svg" class="social-icons" alt="linked">
-        </a></li>
-      
-        <li><a href=""><img src ="./images/medium.svg" class="social-icons" alt="med">
-        </a></li>
-        
-        <li><a href=""><img src="./images/github.svg" class="social-icons" alt="git">
-        </a></li>
-           
-        <li><a href=""><img src="./images/Vector.svg" class="social-icons" alt="vec">
-        </a></li>
+        <-- Header section desktop -->
+      <section id="header-desktop">
+        <nav class="nav">
+          <h3 class="logo">My Logo</h3>
+          <ul class="menu-icon">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
 
+        <section id="profile-detail">
+        <h1 class="intro"> I’m Cookey <br /> Glad to see you! </h1>
+        <p class="profile-detail-para">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+
+        <h4>LET’S CONNECT</h4>
+        <ul class="profile-detail-icons">
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="uil uil-medium-m"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-angellist"></i></a>
+          </li>
         </ul>
       </section>
-    </main>
-
-    <!--Work Section-->
-    <section class="works" id="portfolio">
-      <h1></h1>
-    </section>
-    <section class="modal-container">
-      <ul class="works-modal">
-        <li>
-          <div class="project-header">
-            <div class="modal-title-container">
-              <h1 class="project-title"></h1>
-
-              <i class="fas fa-times modal-close-button"></i>
-            </div>
-            <div class="project-info">
-              <h2 class="project-info-title"></h2>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
-              <img src="#" alt="dot" />
-              <p class="project-info-item"></p>
-            </div>
-          </div>
-        </li>
-        <li class="project-img-wrapper">
-          <img src="#" alt="proj" class="Project-img" />
-        </li>
-        <li class="modal-body">
-          <p class="project-description"></p>
-          <ul class="tags">
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-            <li class="tag-item"></li>
-          </ul>
-          <div class="divider"></div>
-          <div class="action-container">
-            <button class="action-btn see-live" type="button">
-              See Live
-              <img src="./images/seeliveimag.svg" alt="ass" /></button
-            ><button class="action-btn see-source" type="button">
-              See Source
-              <img src="./images/seesourceimg.svg" alt="ass"/>
-            </button>
-          </div>
-        </li>
-      </ul>
     </section>
 
-    <!--About myself section -->
-    <section class="about" id="about">
-      <div class="about-container">
-        <div class="desktop-about">
-          <h2>About <br />myself</h2>
+    <!-- works mobile -->
+    <div id="cards"></div>
+    <!-- works Desktop -->
+    <section id="deskCards"></section>
+
+    <!-- section about -->
+    <section id="about-section">
+      <div class="about-content">
+        <div>
+          <h1>About Myself</h1>
           <p>
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
-          <p class="connect">LET'S CONNECT</p>
-          <ul class="socials icons about-socials">
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-maxcdn" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a></li>
-          </ul>
-          <button class="click">Get my resume</button>
-        </div>
-        
-        <div class="desktop-stack">
-          <h3>
-            <span>Languages</span><img src="/images/arrow-down.svg" alt="arr"/>
-          </h3>
-          <div class="lang">
-            <img src="./images/JavaEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">JavaScript<span>
-          </div> 
-          <div class="lang">
-            <img src="./images/HTMLEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">HTML</span>
-          </div> 
-          <div class="lang">
-            <img src="./images/CSSEllipse.svg" alt="elips">&nbsp;&nbsp;&nbsp;<span class="stack-span">CSS</span>
-          </div> 
-      </div>
 
-          <div class="listfram">
-            <div class="listtag">
-                <button type="button" class="icon"><img src="./images/F1.svg.svg" alt="button2"></button>
-            </div>
-            <ul class="skillul">
-            </ul>
+          <h4>LET’S CONNECT</h4>
+          <ul class="profile-detail-icons">
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="uil uil-medium-m"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-angellist"></i></a>
+            </li>
+          <button class="about-button">Get My Resume</button>
         </div>
-        <div class="listfram">
-            <div class="listtag ">
-        <button type="button" class="icon"><img src="./images/Frame.svg" alt="button"></button>
+
+        <div class="languages">
+          <div class="lang-detail">
+            <h5>Languages</h5>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="lang-vector">
+            <div class="lang">
+              <img   src="./imgs/Javascript.svg"
+                alt="javaScript"
+                width="30"
+                class="lang-img"
+              />
+              <p>Javascript</p>
             </div>
-            <ul class="skillul">
-            </ul>
+            <div class="lang">
+              <img  src="./imgs/html.svg"    alt="HTML"
+                width="35"
+                class="lang-img"
+              />
+              <p>HTML</p>
             </div>
-        </div>
+            <div class="lang">
+              <img  src="./imgs/css.png"      alt="CSS"     width="35"
+                class="lang-img"
+              />
+              <p>CSS</p>
+            </div>
+          </div>
+
+      
+          <div class="lang-lang-desktop">
+            <div class="lang">
+              <img src="./imgs/Javascript.svg" alt="javaScript" width="35"
+              class="lang-img"/>
+              <p>Javascript</p>
+            </div>
+            <div class="lang">
+              <img src="./imgs/html.svg"  alt="HTML icon"   width="35"
+                class="lang-img"
+              />
+              <p>HTML</p>
+            </div>
+            <div class="lang">
+              <img  src="./imgs/css.png"   alt="CSS icon"     width="35"
+                class="lang-img"
+              />
+              <p>CSS</p>
+            </div>
+          </div>
+
+          <div class="language-skills">
+            <div class="frame">
+              <h5>Frameworks</h5>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="lang-sub-skill">
+              <h5>Skills</h5>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!--Contact info section-->
+    <!-- Contact Section -->
     <section class="contact-info" id="contact">
       <article class="contact-headings">
-        <h2>Contact me</h2>
+        <h2>Contact Me</h2>
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that  coding. I’d love to help
@@ -196,6 +209,34 @@
        <div class="emailerror"></div> <button class="form-submit" type="submit">Get In Touch</button>
        </form>
     </section>
-    <script src="./index.js"></script>
+
+    <div id="popmenu" class="popup">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="popup()">&times;</div>
+        <h1>Tonic</h1>
+        <ul id="popup-list">
+          <li>Canopy</li>
+          <li>Backend Dev</li>
+          <li>2015</li>
+        </ul>
+        <img class="popimg" src="./imgs/pic1.PNG" alt="" />
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repudiandae dolores dignissimos minus, accusantium nihil, tempore reiciendis sint assumenda ratione atque facilis tempora voluptate temporibus. Cum accusantium neque voluptas sed!
+        </p>
+        <ul class="popList">
+          <li class="poptech">HTML</li>
+          <li class="poptech">CSS</li>
+          <li class="poptech">Javascript</li>
+        </ul>
+        <div class="popSee">
+          <button>See Free <i class="uil uil-power"></i></button>
+          <button>See Source <i class="uil uil-github"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
+
