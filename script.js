@@ -29,7 +29,7 @@ const mobile = [
   {
     img: './imgs/pic1.png',
     title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    organization: ['CANOPY', 'Backend Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
@@ -38,7 +38,7 @@ const mobile = [
   {
     img: './imgs/pic2.png',
     title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    organization: ['CANOPY', 'Backend Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
@@ -47,7 +47,7 @@ const mobile = [
   {
     img: './imgs/pic3.png',
     title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    organization: ['CANOPY', 'Backend Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
@@ -56,7 +56,7 @@ const mobile = [
   {
     img: './imgs/pic4.png',
     title: 'Multi-Post Stories',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    organization: ['CANOPY', 'Backend Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'css', 'Javascript'],
@@ -68,7 +68,7 @@ const cards = [
   {
     img: './imgs/card1desktop.png',
     title: 'Tonic',
-    company: ['CANOPY', 'Backend Dev', '2015'],
+    organization: ['CANOPY', 'Backend Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'CSS', 'Javascript'],
@@ -77,7 +77,7 @@ const cards = [
   {
     img: './imgs/carddesktop2.png',
     title: 'Multi-Post Stories',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
+    organization: ['FACEBOOK', 'Fullstack Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
@@ -86,7 +86,7 @@ const cards = [
   {
     img: './imgs/card3desktop.png',
     title: 'Facebook 360',
-    company: ['FACEBOOK', 'Fullstack Dev', '2015'],
+    organization: ['FACEBOOK', 'Fullstack Dev', '2015'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
@@ -95,7 +95,7 @@ const cards = [
   {
     img: './imgs/card4desktop.png',
     title: 'Uber Navigation',
-    company: ['UBER', 'Lead Developer', '2018'],
+    organization: ['UBER', 'Lead Developer', '2018'],
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
@@ -113,9 +113,9 @@ cards.forEach((desc) => {
       <div class="container">
           <h2><b>${desc.title}</b></h2>
               <ul class="pic-one">
-                  <li>${desc.company[0]}</li>
-                  <li class="card-list">${desc.company[1]}</li>
-                  <li class="card-list">${desc.company[2]}</li>
+                  <li>${desc.organization[0]}</li>
+                  <li class="card-list">${desc.organization[1]}</li>
+                  <li class="card-list">${desc.organization[2]}</li>
               </ul>
           <p>${desc.description}</p>
           <ul class="pic-two">
@@ -141,9 +141,9 @@ mobile.forEach((mobDesc) => {
       <div class="container">
           <h2><b>${mobDesc.title}</b></h2>
               <ul class="pic-one">
-                  <li>${mobDesc.company[0]}</li>
-                  <li class="card-list">${mobDesc.company[1]}</li>
-                  <li class="card-list">${mobDesc.company[2]}</li>
+                  <li>${mobDesc.organization[0]}</li>
+                  <li class="card-list">${mobDesc.organization[1]}</li>
+                  <li class="card-list">${mobDesc.organization[2]}</li>
               </ul>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           <ul class="pic-two">
