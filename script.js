@@ -36,4 +36,3 @@ const dash = JSON.parse(localStorage.getItem('formContent'));
 document.querySelector('.fullname').value = dash.name;
 document.querySelector('.emails').value = dash.email;
 document.querySelector('.contact-message').value = dash.message;
-
