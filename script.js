@@ -1,205 +1,39 @@
-// Toggle Menu (navBar)
+const menuIcon = document.querySelector('.mob-menu');
+const sideNav = document.querySelector('.mobileNav');
+const menuLinks = document.querySelectorAll('.menuMobile');
+const main = document.querySelector('main');
+// let body = document.querySelector('body');
 
-const menu = document.querySelector('.nav-bar-menu');
-const mButton = document.querySelector('#hamburger');
-const closeBtn = document.querySelector('#close-button');
-
-mButton.addEventListener('click', () => {
-  menu.style.display = 'flex';
-  closeBtn.style.display = 'inline-block';
-  mButton.style.display = 'none';
-  menu.style.zIndex = '10';
-  closeBtn.style.zIndex = '11';
-});
-
-// Close the nav menu
-closeBtn.addEventListener('click', () => {
-  menu.style.display = 'none';
-  closeBtn.style.display = 'none';
-  mButton.style.display = 'inline-block';
-});
-
-menu.addEventListener('click', () => {
-  menu.style.display = 'none';
-  closeBtn.style.display = 'none';
-  mButton.style.display = 'inline-block';
-});
-
-const mobile = [
-  {
-    img: './imgs/pic1.png',
-    title: 'Tonic',
-    organization: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'CSS', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/pic2.png',
-    title: 'Multi-Post Stories',
-    organization: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/pic3.png',
-    title: 'Tonic',
-    organization: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/pic4.png',
-    title: 'Multi-Post Stories',
-    organization: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'Javascript'],
-    button: 'See Project',
-  },
-];
-
-const cards = [
-  {
-    img: './imgs/card1desktop.png',
-    title: 'Tonic',
-    organization: ['CANOPY', 'Backend Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'CSS', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/carddesktop2.png',
-    title: 'Multi-Post Stories',
-    organization: ['FACEBOOK', 'Fullstack Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/card3desktop.png',
-    title: 'Facebook 360',
-    organization: ['FACEBOOK', 'Fullstack Dev', '2015'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-  {
-    img: './imgs/card4desktop.png',
-    title: 'Uber Navigation',
-    organization: ['UBER', 'Lead Developer', '2018'],
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'Ruby on rails', 'Css', 'Javascript'],
-    button: 'See Project',
-  },
-];
-
-const workContent = document.querySelector('#deskCards');
-cards.forEach((desc) => {
-  const workCards = document.createElement('div');
-  workCards.innerHTML = `  
-     
-     <div class="card">
-      <img src=${desc.img} alt="Card One" width="550">
-      <div class="container">
-          <h2><b>${desc.title}</b></h2>
-              <ul class="pic-one">
-                  <li>${desc.organization[0]}</li>
-                  <li class="card-list">${desc.organization[1]}</li>
-                  <li class="card-list">${desc.organization[2]}</li>
-              </ul>
-          <p>${desc.description}</p>
-          <ul class="pic-two">
-              <li>${desc.languages[0]}</li>
-              <li>${desc.languages[1]}</li>
-              <li>${desc.languages[2]}</li>
-          </ul>
-          <div class="card-button"  onclick="popup()">${desc.button}</div>
-      </div>
-  </div>
-    `;
-
-  workContent.appendChild(workCards);
-});
-
-const worksMobile = document.querySelector('#cards');
-mobile.forEach((mobDesc) => {
-  const workMobile = document.createElement('div');
-  workMobile.innerHTML = `  
-     
-    <div class="card">
-      <img src=${mobDesc.img} alt="Card One" style="width:100%">
-      <div class="container">
-          <h2><b>${mobDesc.title}</b></h2>
-              <ul class="pic-one">
-                  <li>${mobDesc.organization[0]}</li>
-                  <li class="card-list">${mobDesc.organization[1]}</li>
-                  <li class="card-list">${mobDesc.organization[2]}</li>
-              </ul>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul class="pic-two">
-              <li>${mobDesc.languages[0]}</li>
-              <li>${mobDesc.languages[1]}</li>
-              <li>${mobDesc.languages[2]}</li>
-          </ul>
-          <div class="card-button" onclick="popup()">${mobDesc.button}</div>
-      </div>
-    </div>
-    `;
-
-  worksMobile.appendChild(workMobile);
-});
-
-const popper = document.querySelector('#popmenu');
-
-// eslint-disable-next-line no-unused-vars
-function popup() {
-  popper.classList.toggle('active');
-}
-
-// form validation
-const formemail = document.querySelector('#form');
-const emailerror = document.querySelector('.emailerror');
-const userEmail = document.querySelector('.useremail');
-
-formemail.addEventListener('submit', (e) => {
-  const userinput = userEmail.value;
-  if (/[A-Z]/.test(userinput)) {
-    emailerror.innerHTML = 'invalid email, please use small letters';
-    emailerror.classList.add('.emailerror');
-    e.preventDefault();
-  }
-});
-
-const clientName = document.getElementById('fullname');
-const clientEmail = document.getElementById('email');
-const clientMessage = document.getElementById('message-input');
-
-window.onload = () => {
-  const formData = localStorage.getItem('formKey');
-
-  if (formData) {
-    const form = JSON.parse(formData);
-    clientName.value = form.clientName;
-    clientEmail.value = form.clientEmail;
-    clientMessage.value = form.clientMessage;
-  }
+const open = () => {
+  sideNav.classList.add('mobileNavActive');
+  main.style.opacity = '0.2';
+  main.style.backdropfilter = 'blur(8px)';
+  // body.style.color = '#6070FF';
 };
 
-formemail.addEventListener('input', () => {
-  const formstorage = {
-    clientName: clientName.value,
-    clientEmail: clientEmail.value,
-    clientMessage: clientMessage.value,
-  };
-  localStorage.setItem('formKey', JSON.stringify(formstorage));
+const close = () => {
+  sideNav.classList.remove('mobileNavActive');
+  main.style.opacity = '1';
+};
+
+menuIcon.addEventListener('click', open);
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', close);
 });
+
+const form = document.querySelector('.form');
+form.addEventListener('input', () => {
+  const formInfo = {
+    name: document.querySelector('.fullname').value,
+    email: document.querySelector('.emails').value,
+    message: document.querySelector('.contact-message').value,
+  };
+
+  localStorage.setItem('formContent', JSON.stringify(formInfo));
+});
+
+const dash = JSON.parse(localStorage.getItem('formContent'));
+document.querySelector('.fullname').value = dash.name;
+document.querySelector('.emails').value = dash.email;
+document.querySelector('.contact-message').value = dash.message;
+
