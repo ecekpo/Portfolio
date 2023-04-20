@@ -1,10 +1,13 @@
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,7 +78,7 @@ header {
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
-  background-image: url(imgs/Header\ bg@2x.png);
+  background-image: url(images/headershape.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   align-items: center;
@@ -102,9 +105,8 @@ header {
   font-family: Poppins, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 30px;
   color: #344563;
-  text-align: justify;
   padding: 10px;
   animation-duration: 3s;
   animation-name: slidein;
@@ -197,7 +199,7 @@ header {
 
 .mobileNav li {
   padding: 8px 8px 8px 3px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   text-decoration: none;
   list-style: none;
@@ -398,6 +400,10 @@ button:hover {
   font-style: normal;
   font-size: 12px;
   gap: 5px;
+}
+
+.frame-skill {
+  list-style: none;
 }
 
 hr {
