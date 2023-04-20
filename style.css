@@ -160,6 +160,7 @@ header {
 
 .contact li {
   padding-right: 15px;
+  list-style: none;
 }
 
 .contact img {
