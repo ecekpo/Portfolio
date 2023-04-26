@@ -111,6 +111,7 @@ header {
   animation-duration: 3s;
   animation-name: slidein;
   overflow: hidden;
+  text-align: justify;
 }
 
 @keyframes slidein {
