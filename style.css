@@ -23,6 +23,10 @@ main {
 header {
   display: block;
   font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .container {
