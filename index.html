@@ -1,231 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link  rel="stylesheet"  href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <script       src="https://kit.fontawesome.com/b2291adafa.js" 
-    crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-       
-    <title>Cookey's Portfolio</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="mobile-nav">
-        <div class="nav__container">
-          <a href="./index.html" class="logo">My Logo</a>
-          <ul class="nav-bar-menu">
-            <li><a href="#cards">Portfolio</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
-          <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>COOKEY Portfolio</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <a href="#" class="my-logo">EMEM</a>
+      <nav class="dropdown">
+        <img src="images/menu.png" class="mob-menu" alt="navbar icon">
+          <ul class="mobileNav">
+          <li class="menuMobile closeBtn"><a href="javascript:void(0)" class="link">×</a></li>
+          <li class="menuMobile"><a href="#works" class="link">Portfolio</a></li>
+          <li class="menuMobile"><a href="#about" class="link">About</a></li>
+          <li class="menuMobile"><a href="#contact" class="link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="desktop-nav">
+        <ul class="navList">
+          <li class="menuDesk"><a href="#works" class="menulink">Portfolio</a></li>
+          <li class="menuDesk"><a href="#about">About</a></li>
+          <li class="menuDesk"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="banner">
+      <div class="fit-background">
+        <div class="banner-containers">
+          <div class="intro-text">
+            <h1>
+              I'm Cookey <br>
+              Glad to see
+              you!
+            </h1>
+            <p>
+              Welcome to my online portfolio, where I showcase my latest web development projects and share my passion for crafting beautiful and functional websites.
+            </p>
+          </div>
+          <div class="contact">
+            <a class="connect" href="#contact">Let's Connect</a>
+            <ul>
+              <li>
+                <a href="https://angel.co/u/emem-ekpo-2" target="_blank" rel="noopener"><span class="icons"><img src="imgs/angelist_logo.png" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/emem-ekpo" target="_blank" rel="noopener"><span class="icons"><img src="imgs/linkedin-in.png" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@emem.ekpo75" target="_blank" rel="noopener"><span class="icons"><img src="imgs/medium.svg" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://github.com/ecekpo" target="_blank" rel="noopener"><span class="icons"><img src="imgs/github.png" alt=""></span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <section id="overlay">
-      <!--Header Section -->
-      <!-- <div id="header">
-            <nav class="nav">
-                <h3 class="logo">My Logo</h3>
-                <div class="menu-icon">
-                    <i class="uil uil-bars"></i>
-                </div>
-            </nav>
-          </div>
-        
-        <-- Header section desktop -->
-      <section id="header-desktop">
-        <nav class="nav">
-          <h3 class="logo">My Logo</h3>
-          <ul class="menu-icon">
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-
-        <section id="profile-detail">
-        <h1 class="intro"> I’m Cookey <br /> Glad to see you! </h1>
-        <p class="profile-detail-para">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-
-        <h4>LET’S CONNECT</h4>
-        <ul class="profile-detail-icons">
-          <li>
-            <a href=""><i class="fa-brands fa-twitter"></i></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="uil uil-medium-m"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-angellist"></i></a>
-          </li>
-        </ul>
-      </section>
     </section>
 
-    <!-- works mobile -->
-    <div id="cards"></div>
-    <!-- works Desktop -->
-    <section id="deskCards"></section>
+    <section class="works">
 
-    <!-- section about -->
-    <section id="about-section">
-      <div class="about-content">
-        <div>
-          <h1>About Myself</h1>
+        <div class="Projects  Left Right">
+        <img class="Mobile-banners" src="./imgs/budget_new.jpeg" alt="">
+        <img class="work-banners" src="./imgs/budget_new.jpeg" alt="">
+        <div class="text">
+          <h2 class="Tonic">BUDGET APP</h2>
+          <div class="desc-list">
+            <ul>
+              <li class="CANOPY">Back End</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>Development</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>2023</li>
+            </ul>
+          </div>
+
           <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            A full-stack app that allows users to manage their budget with features that show  of transactions associated with a category where users can see how much money they spent and on what. 
           </p>
-
-          <h4>LET’S CONNECT</h4>
-          <ul class="profile-detail-icons">
-            <li>
-              <a href=""><i class="fa-brands fa-twitter"></i></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="uil uil-medium-m"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa fa-angellist"></i></a>
-            </li>
-          <button class="about-button">Get My Resume</button>
+          <div class="button-list">
+            <ul>
+              <li><a href="">RAILS</a></li>
+              <li><a href="">RUBY ON RAILS</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <a href="https://budget-app-bmmv.onrender.com/" target="_blank" rel="noopener"><button type="button" class="seeProject">See Live</button> </a>
+             <a href="https://github.com/ecekpo/Budget-app" target="_blank" rel="noopener"><button type="button" class="seeProject">See Source</button> </a>
+           </div>
         </div>
+      </div>  
 
-        <div class="languages">
-          <div class="lang-detail">
-            <h5>Languages</h5>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="lang-vector">
-            <div class="lang">   <img   src="./imgs/Javascript.svg"  alt="javaScript"    width="35"
-                class="lang-img"
-              />
-              <p>Javascript</p>
-            </div>
-            <div class="lang"> <img  src="./imgs/html.svg"  alt="HTML"    width="35"
-                class="lang-img"
-              />
-              <p>HTML</p>
-            </div>
-            <div class="lang">  <img  src="./imgs/css.png"      alt="CSS"     width="35"
-                class="lang-img"
-              />
-              <p>CSS</p>
-            </div>
-          </div>
-      
-          <div class="lang-lang-desktop">
-            <div class="lang">  <img src="./imgs/Javascript.svg" alt="javaScript" width="35"
-              class="lang-img"/>
-              <p>Javascript</p>
-            </div>
-            <div class="lang"> <img src="./imgs/html.svg"  alt="HTML icon"   width="35"
-                class="lang-img"
-              />
-              <p>HTML</p>
-            </div>
-            <div class="lang"> <img  src="./imgs/css.png"   alt="CSS icon"     width="35"
-                class="lang-img"
-              />
-              <p>CSS</p>
-            </div>
+      <div class="Projects  Left">
+        <img class="Mobile-banners" src="./imgs/Space_new.jpeg" alt="">
+        <img class="work-banners" src="./imgs/Space_new.jpeg" alt="Portfolio image" >
+        <div class="text">
+          <h2 class="Tonic">SPACE TRAVELERS</h2>
+
+          <div class="desc-list">
+            <ul>
+              <li class="CANOPY">Front End</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>Development</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>2022</li>
+            </ul>
           </div>
 
-          <div class="language-skills">
-            <div class="frame">
-              <h5>Frameworks</h5>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-            <div class="lang-sub-skill">
-              <h5>Skills</h5>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
+          <p>
+            Space Travelers' Hub is a website that works with the real live data from the SpaceX API for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+          </p>
+          <div class="button-list">
+            <ul>
+              <li><a href="">REACTJS</a></li>
+              <li><a href="">JAVASCRIPT</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+           <a href="https://spaces-hub.netlify.app/"  target="_blank" rel="noopener"><button type="button" class="seeProject">Live</button> </a>
+            <a href="https://github.com/ecekpo/space-travelers-hub" target="_blank" rel="noopener"><button type="button" class="seeProject">Source</button> </a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact-info" id="contact">
-      <article class="contact-headings">
-        <h2>Contact Me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that  coding. I’d love to help
-          with it
-        </p>
-      </article>
+      <div class="Projects  Left Right">
+        <img class="Mobile-banners" src="./imgs/Rcapstone.jpeg" alt="">
+        <img class="work-banners" src="./imgs/Rcapstone.jpeg" alt="">
+        <div class="text">
+          <h2 class="Tonic">REACT CAPSTONE</h2>
+          <div class="desc-list">
+            <ul>
+              <li class="CANOPY">Front End</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>Development</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>2022</li>
+            </ul>
+          </div>
 
-      <form action="https://formspree.io/f/xrgjvloe" method="POST" id="form">
-        <input id="fullname" type="text" name="username" maxlength="30" placeholder="Full name" required />
-      <input type="email" class="useremail" id="email" name="email" placeholder="Email" required />
-      <textarea id="message-input" name="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here"required></textarea>
-       <div class="emailerror"></div> <button class="form-submit" type="submit">Get In Touch</button>
-       </form>
-    </section>
-
-    <div id="popmenu" class="popup">
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="close-btn" onclick="popup()">&times;</div>
-        <h1>Tonic</h1>
-        <ul id="popup-list">
-          <li>Canopy</li>
-          <li>Backend Dev</li>
-          <li>2015</li>
-        </ul>
-        <img class="popimg" src="./imgs/pic1.PNG" alt="" />
-        <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repudiandae dolores dignissimos minus, accusantium nihil, tempore reiciendis sint assumenda ratione atque facilis tempora voluptate temporibus. Cum accusantium neque voluptas sed!
-        </p>
-        <ul class="popList">
-          <li class="poptech">HTML</li>
-          <li class="poptech">CSS</li>
-          <li class="poptech">Javascript</li>
-        </ul>
-        <div class="popSee">
-          <button>Seelive <i class="uil uil-power"></i></button>
-          <button>Seesource <i class="uil uil-github"></i></button>
+          <p>
+            React Redux Capstone Project is a mobile web application which uses Rest Countries Api to provide World Statistics (numeric values) such as the population, area and many other data of each country of the world.
+          </p>
+          <div class="button-list">
+            <ul>
+              <li><a href="">HTML</a></li>
+              <li><a href="">CSS</a></li>
+              <li><a href="">REACT</a></li>
+              <li><a href="">REDUX</a></li>
+              <li><a href="">JEST</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <a href="https://fancy-lolly-0661cb.netlify.app/" target="_blank" rel="noopener"><button type="button" class="seeProject">See Live</button> </a>
+             <a href="https://github.com/ecekpo/REACT-CAPSTONE" target="_blank" rel="noopener"><button type="button" class="seeProject">See Source</button> </a>
+           </div>
         </div>
       </div>
+
+      <div class="Projects Left">
+        <img class="Mobile-banners" src="./imgs/Math_new.jpeg" alt="">
+        <img class="work-banners" src="./imgs/Math_new.jpeg" alt="">
+        <div class="text">
+          <h2 class="Tonic">MATH MAGICIANS</h2>
+          <div class="desc-list">
+            <ul>
+              <li class="CANOPY">Front End</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>Development</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>2022</li>
+            </ul>
+          </div>
+
+          <p>
+            Math magicians is a website for all fans of mathematics and is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
+          </p>
+          <div class="button-list">
+            <ul>
+              <li><a href="">REACT</a></li>
+              <li><a href="">CSS</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <a href="https://sweet-gingersnap-c33f98.netlify.app/" target="_blank" rel="noopener"><button type="button" class="seeProject">See Live</button> </a>
+             <a href="https://github.com/ecekpo/math-magicians" target="_blank" rel="noopener"><button type="button" class="seeProject">See Source</button> </a>
+           </div>
+        </div>
+      </div>
+
+      <div class="Projects Left Right">
+        <img class="Mobile-banners" src="./imgs/leader_new.jpeg" alt="">
+        <img class="work-banners" src="./imgs/leader_new.jpeg" alt="">
+        <div class="text">
+          <h2 class="Tonic">LEADERBOARD</h2>
+          <div class="desc-list">
+            <ul>
+              <li class="CANOPY">Front End</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>Development</li>
+              <li>
+                <a href="#"><img src="Images&Icons/Counter.png" alt=""></a>
+              </li>
+              <li>2022</li>
+            </ul>
+          </div>
+
+          <p>
+            Leaderboard website displays scores submitted by different players. It also allows to submit score. All data is preserved to the external API service.
+          </p>
+          <div class="button-list">
+            <ul>
+              <li><a href="">HTML</a></li>
+              <li><a href="">CSS</a></li>
+              <li><a href="">JAVASCRIPT</a></li>
+              <li><a href="">WEBPACK</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <a href="https://ecekpo.github.io/LEADERBOARD/" target="_blank" rel="noopener"><button type="button" class="seeProject">See Live</button> </a>
+             <a href="https://github.com/ecekpo/LEADERBOARD" target="_blank" rel="noopener"><button type="button" class="seeProject">See Source</button> </a>
+           </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="active" id="overlay"></div>
+    <div id="model1">
+
     </div>
 
-    <script src="./script.js"></script>
-  </body>
-</html>
+    <section class="About" id="about">
+      <div class="containerr">
+        <div class="about-deskitop">
+          <div class="intro-text">
+            <h1>
+              About <br>
+              Myself
+            </h1>
+            <p class="about-text">
+              A Full-stack Web Developer equipped with a solid foundation in front-end and back-end technologies. I am eager to begin my career and contribute my technical expertise to exciting projects. Whether you need a sleek and modern website, a robust web application, or a dynamic e-commerce platform, I am ready to tackle any challenge and deliver exceptional results. Let's collaborate and bring your vision to life!
+            </p>
+          </div>
+          <div class="contact">
+            <a class="connect" href="#contact">Let's Connect</a>
+            <ul>
+              <li>
+                <a href="https://angel.co/u/emem-ekpo-2" target="_blank" rel="noopener"><span class="icons"><img src="imgs/angelist_logo.png" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/emem-ekpo" target="_blank" rel="noopener"><span class="icons"><img src="imgs/linkedin-in.png" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://github.com/ecekpo" target="_blank" rel="noopener"><span class="icons"><img src="imgs/github.png" alt=""></span></a>
+              </li>
+              <li>
+                <a href="https://medium.com/@emem.ekpo75" target="_blank" rel="noopener"><span class="icons"><img src="imgs/medium.svg" alt=""></span></a>
+              </li>
+              <li>
+                <a href="mailto:ememekpo@yahoo.com" target="_blank" rel="noopener"><span class="icons"><img src="imgs/email_logo.png" alt=""></span></a>
+              </li>
+            </ul>
 
+            <a href="./imgs/Emem_Ekpo_Resume.pdf" target="_blank"><button type="button" class="btn">Get my Resume</button></a>
+          </div>
+        </div>
+        </div>
+        <div class="languages">
+
+          <ul class="tar">
+            <li>Languages</li>
+            <li><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+          </ul>
+          <div class="lang-deskitop">
+
+            <ul class="jav bio">
+              <li><img src="./imgs/Javascript.svg" alt=""></li>
+              <li><span>JavaScript</span></li>
+            </ul>
+            <ul class="bio">
+              <li><img src="./imgs/html.svg" alt=""></li>
+              <li><span>HTML</span></li>
+            </ul>
+            <ul class="bio">
+              <li><img src="./imgs/css.png" alt=""></li>
+              <li><span>CSS</span></li>
+            </ul>
+            </div>
+          <div class="framework-skills">
+            <section>
+              <h4>Frameworks</h4>
+              <ul class="frame-skill">
+                <li class="fs">Ruby on Rails</li>            
+                <li class="fs">React</li>
+                <li class="fs">RSpec</li>
+                <li class="fs">Capybara</li>
+                <li class="fs">Bootstrap</li>
+                <li class="fs">Active Record</li>
+              </ul>
+            </section>
+            
+            <section>
+              <h4 class="skills">Skills</h4>
+              <ul class="frame-skill">
+                <li class="fs">PostgreSQL</li>
+                <li class="fs">Github</li>
+                <li class="fs">Git</li>
+                <li class="fs">Collaboration</li>
+                <li class="fs">Communication</li>
+                <li class="fs">Problem-solving</li>
+              </ul>
+            </section>
+        </div>
+
+      </div>
+    </section>
+    
+    
+    <section class="contact-me" id="contact">
+      <div class="contact-backgrounds">
+        <div class="contact-banner">
+          <h1>Contact me</h1>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built, or a project that needs coding, I’d
+            love to help with it.
+          </p>
+          
+          
+          <form class="form" action="https://formspree.io/f/xrgjvloe" method="post">
+            <div class="form-input">
+              <p class="validationMessage"></p>
+              <input class="fullname" type="text" id="fname" name="fullname" placeholder="  Your name?" maxlength="30"
+              required />
+            </div>
+            <div class="form-input">
+              <input class="emails" type="email" id="email" name="email" placeholder="  Your email address?" required />
+            </div>
+            <div class="form-input">
+              <textarea class="contact-message" id="msg" name="message" placeholder="  Write your message here"
+              maxlength="500" required></textarea>
+            </div>
+            <div class="form-input">
+              <input type="submit" value="Get In Touch" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
